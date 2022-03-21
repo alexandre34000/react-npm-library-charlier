@@ -1,0 +1,143 @@
+.component-table__container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.component-table__content-head {
+    display: flex;
+    justify-content: space-around;
+}
+
+.component-table__content-head_headers {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.component-table__content-body {
+    padding: 5px 0;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.component-table__content-body__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.component-table__content-body__thead {
+    width: 100%;
+}
+
+.component-table__th-table {
+    position: relative;
+    height: 30px;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 28px;
+}
+
+.table-header__text {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 30px 0 20px;
+}
+
+.table-header__text[data-focus="true"] {
+    background-color: #c2c2c2;
+    transition: all 0.3s ease-in-out;
+}
+
+.table-header__icon-filter {
+    position: absolute;
+    right: 0;
+    width: 15px;
+    height: 50%;
+    border: 1px solid rgb(53, 53, 53);
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    font-size: 10px;
+}
+
+.table-header__icon-up {
+    top: 0;
+    line-height: 8px;
+}
+
+.table-header__icon-dwn {
+    top: 50%;
+    line-height: 16px;
+}
+
+.table-header__icon:hover {
+    background-color: #c2c2c2;
+}
+
+tbody tr:nth-child(even) {
+    background: #eee;
+}
+
+.component-table__td-table {
+    padding: 5px 0;
+    border: 1px solid grey;
+    text-align: center;
+    font-size: 15px;
+}
+
+.component-table__content-footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px 0;
+    height: 40px;
+}
+
+.table-footer__counter-items {
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    font-size: 16px;
+}
+
+.table-footer__button {
+    width: 100px;
+    height: 25px;
+    margin: 0 50px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: darkgray;
+    color: white;
+    box-shadow: 3px 3px 3px grey;
+    cursor: pointer;
+}
+
+.table-footer__button:disabled {
+    background-color: #d3d4d3;
+    box-shadow: none;
+}
+
+.table-footer__numpage-list {
+    display: block;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 26px;
+    color: black;
+    cursor: pointer;
+}
+
+.table-footer__numpage-list[data-active="true"] {
+    background-color: darkgray;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 1px 1px 1px grey;
+}
+
