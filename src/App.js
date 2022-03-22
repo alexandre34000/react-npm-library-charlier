@@ -1,7 +1,7 @@
 
 //import './App.css';
 //import { Button } from "@alexandre34000/template-react-tables-filters";
-//import TableTest from './component/tableTest';
+import TableTest from './component/TableTest';
 import bodyElements from "./data/bodyElements";
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div className="App">
-       <h1> Test des composants</h1>
-       {/* <TableTest  bodyElements={bodyElements} optionsTable={optionsTable} headerElements={headerElements}/> */}
+       <h1>Test des composants</h1>
+<TableTest  bodyElements={bodyElements} optionsTable={optionsTable} headerElements={headerElements}/>       
     </div>
   );
 }
